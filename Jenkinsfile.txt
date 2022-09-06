@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage('Hello, welcome to Continuous Integration World){
+        stage('Hello_World){
         steps {
             echo '******************'
             echo 'Hello world'
