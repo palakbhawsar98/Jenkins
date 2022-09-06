@@ -1,11 +1,18 @@
 pipeline{
  agent any
+ environment{
+  USER='Palak'
+  PROJECT='Jenkins'
+}
+
    stages{
     stage('pre'){
      steps{
       echo " predefined variable $BUILD_NUMBER $WORKSPACE "
+      echo " $USER working on $PROJECT project "
          }
      }
   }
 }
+
 
