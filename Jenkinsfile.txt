@@ -1,0 +1,12 @@
+pipeline{
+    agent any
+    stages{
+        stage('Hello, welcome to Continuous Integration World){
+        steps {
+            echo '******************'
+            echo 'Hello world'
+            echo '******************'
+        }
+   }
+  }
+}
