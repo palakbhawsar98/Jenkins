@@ -1,12 +1,11 @@
 pipeline{
-    agent any
-    stages{
-        stage('Hello_World){
-        steps {
-            echo '******************'
-            echo 'Hello world'
-            echo '******************'
-        }
-   }
+ agent any
+   stages{
+    stage('pre'){
+     steps{
+      echo " predefined variable $BUILD_NUMBER $WORKSPACE "
+         }
+     }
   }
 }
+
