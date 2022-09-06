@@ -11,11 +11,17 @@ pipeline {
                 echo "Building project"
                }
             }
+            stage("Test"){
+            steps{
+                echo "Test"
+               }
+            }
             stage("Deploy"){
             steps{
                 echo "Deploying project on Docker"
                }
             }
+           
         }
 
 }
