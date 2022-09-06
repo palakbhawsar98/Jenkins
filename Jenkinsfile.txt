@@ -1,12 +1,16 @@
 pipeline{
     agent any
+    options{
+        timestamps()
+    }
+    triggers{
+        cron('* * * * *')
+    }
     stages{
-        stage('Hello_World){
-        steps {
-            echo '******************'
-            echo 'Hello world'
-            echo '******************'
+        stage("cron"){
+            steps{
+                echo "This is cron job triggers every minute."
+            }
         }
-   }
-  }
+    }
 }
