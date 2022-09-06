@@ -1,18 +1,23 @@
-pipeline{
- agent any
- environment{
-  USER='Palak'
-  PROJECT='Jenkins'
-}
+pipeline {
+    agent any 
+        stages{
+            stage("Clean"){
+            steps{
+                echo "cleaning project"
+               }
+            }
+            stage("Build") {
+            steps{
+                echo "Building project"
+               }
+            }
+            stage("Deploy"){
+            steps{
+                echo "Deploying project"
+               }
+            }
+        }
 
-   stages{
-    stage('pre'){
-     steps{
-      echo " predefined variable $BUILD_NUMBER $WORKSPACE "
-      echo " $USER working on $PROJECT project "
-         }
-     }
-  }
 }
 
 
