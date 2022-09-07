@@ -1,3 +1,3 @@
 # Jenkins
 
-Bash script to install Jenkins in ubuntu
+User data Bash script to install Jenkins in ubuntu & RedHat machine.
