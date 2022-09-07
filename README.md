@@ -1,2 +1,3 @@
 # Jenkins
-1. Simple 'Hello_world' pipeline script.
+
+Bash script to install Jenkins in ubuntu
